@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/my/my",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F65E2E",
+    "navigationBarTitleText": "菜谱大全",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#F65E2E",
+    "backgroundColor": "#FFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "resource/images/search.png",
+        "selectedIconPath": "resource/images/search_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "resource/images/my.png",
+        "selectedIconPath": "resource/images/my_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

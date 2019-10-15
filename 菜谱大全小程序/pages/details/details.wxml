@@ -1,0 +1,29 @@
+<!--pages/details/details.wxml-->
+
+<view class="container">
+  <view class="top">
+    <image class="albums" mode="scaleToFill" src="{{result.albums[0]}}"></image>
+  </view>
+  <view class="content">
+    <view class="title">
+      <text>{{result.title}}</text>
+    </view>
+    <view class="imtro">
+      <text class="imtro-title">描述</text>
+      <text>{{result.imtro}}</text>
+    </view>
+    <view class="burden">
+      <text class="burden-title">用料</text>
+      <text>{{result.burden}}</text>
+    </view>
+    <view class="steps">
+      <text class="steps-title">做法</text>
+      <block wx:for="{{result.steps}}" wx:for-index wx:key="true">
+        <view class="steps-content">
+          <text>{{item.step}}</text>
+          <image mode="aspectFill" src="{{item.img}}"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
